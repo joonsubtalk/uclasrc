@@ -1,0 +1,541 @@
+﻿
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Scholarship Resource Center</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+      <!-- Le styles -->
+      <link href="../assets/css/bootstrap.css" rel="stylesheet">
+      <link href="../assets/css/bootmin.css" rel="stylesheet">
+      <style type="text/css">
+
+
+        body {
+          background-image:url('../assets/img/sub-background.png');
+          background-repeat: repeat-x;
+          background-color: #dfeef9;
+          padding-top: 0px;
+          padding-bottom: 40px;
+          color: #555;
+          font: "ProximaNova", Verdana, sans-serif;
+          font-size: 15px;
+        }
+        h3,h4{
+          font-weight: 300;
+        }
+
+        .floss{
+        color: #57A1C7;
+        }
+        /*
+        h3 a:visited {
+        color: #49afcd;
+        }*/
+        h3 a:hover {
+        color: #276a99;
+        }
+        h2, h3{
+          font-family: 'Archivo Narrow', sans-serif;
+        }
+
+        .top-logo h2 {
+          padding-top: 10px;
+          padding-bottom: 10px;
+            color: #fff;
+          margin-top: -5px; 
+        }
+        .top-logo {
+          margin-top: none;
+          margin-top: 45px; 
+        }
+        .main {
+          background-color: #fff;
+          /*padding: 20px;*/
+          -webkit-border-bottom-right-radius: 20px;
+          -webkit-border-bottom-left-radius: 20px;
+          -moz-border-radius-bottomright: 20px;
+          -moz-border-radius-bottomleft: 20px;
+          border-bottom-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+        }
+        .carousel {
+          margin-bottom: 0px;
+        }
+         .popover {
+              width: 400px;
+              -webkit-border-top-left-radius: 0px;
+              -webkit-border-bottom-left-radius: 0px;
+              border-top-left-radius: 0px;
+              border-bottom-left-radius: 0px;
+              overflow: hidden;
+          }
+          /*
+          .popover-content {
+              text-align: center;
+          }*/
+          .popover-content img {
+              height: 212px;
+              max-width: 250px;
+          }
+
+          .dropdown-menu > li > a:hover {
+              background-image: none;
+              color: white;
+              background-color: rgb(0, 129, 194);
+              background-color: rgba(0, 129, 194, 0.5);
+          }
+
+          .dropdown-menu > li > a.maintainHover {
+              color: white;
+              background-color: #0081C2;
+          }
+          /* Portrait tablet to landscape and desktop */
+          @media (min-width: 0px) and (max-width: 979px) { 
+            .logo {margin-top: 0px;}
+            .top-logo {margin-top: 0px;}
+
+
+            .main-feature-bg {
+              padding-left: 0;
+            }
+            .main-feature {
+              position:relative;
+              margin-top: 0;
+              background: #fff;
+            }
+          }
+          @media (min-width: 981px) and (max-width: 1199px) { 
+            .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+            width: 900px;
+            }
+          }
+          @media (min-width: 980px){
+            /*
+            .span4 {
+              width: 280px;
+            }
+            .span8 {
+              width: 580px;
+            }
+
+          .span6 {
+            width: 400px;
+            }
+            */
+            
+          .main-feature-bg {
+            padding-left: 80px;
+          }
+            .main-feature {
+              position:absolute;
+              margin-top: -40px;
+              width: 860px;
+              background: #fff;
+            }
+            .footer-feature {
+              position:absolute;
+              width: 860px;
+              background: #fff;
+            }
+          }
+          @media (min-width: 1200px){
+          .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+            width: 900px;
+            }
+
+          .main-feature {
+            position:absolute;
+            margin-top: -40px;
+            width: 860px;
+            background: #fff;
+            border:1px solid #C6DAE9;
+          }
+          
+            .footer-feature {
+              position:absolute;
+              width: 860px;
+              background: #fff;
+            }
+
+
+          .main-feature-bg {
+            padding-left: 80px;
+          }
+          }
+          /* mac */
+          .navbar .nav {
+            font-size: 12px;
+          }
+          .navbar-inverse .brand {
+            font-size: 14px;
+            color: #005179;
+          }
+          .navbar-inverse .brand, .navbar-inverse .nav>li>a {
+            color: #005179;
+          }
+          .navbar-inverse .nav .active>a, .navbar-inverse .nav .active>a:hover, .navbar-inverse .nav .active>a:focus {
+            color: #ffffff;
+            background-color: #1a4b95;
+          }
+
+          .btn-gold {
+            background-color: hsl(51, 100%, 51%) !important;
+            background-repeat: repeat-x;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe760", endColorstr="#ffd905");
+            background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe760), to(#ffd905));
+            background-image: -moz-linear-gradient(top, #ffe760, #ffd905);
+            background-image: -ms-linear-gradient(top, #ffe760, #ffd905);
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffe760), color-stop(100%, #ffd905));
+            background-image: -webkit-linear-gradient(top, #ffe760, #ffd905);
+            background-image: -o-linear-gradient(top, #ffe760, #ffd905);
+            background-image: linear-gradient(#ffe760, #ffd905);
+            border-color: #ffd905 #ffd905 hsl(51, 100%, 46.5%);
+            color: #333 !important;
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.29);
+            -webkit-font-smoothing: antialiased;
+          }
+          .bump {
+            margin-bottom: 10px;
+          }
+          footer{
+            background-image:url('../assets/img/bgfooter.jpg');
+            background-repeat: repeat-x;
+            background-color: #fff;
+          }
+          .red {
+            background-color: #a03939;
+            margin: 10px;
+            color: #fff;
+            padding: 10px 20px;
+          }
+          .green {
+            background-color: #59a039;
+            margin: 10px;
+            padding: 10px 20px;
+            color: #fff;
+          }
+          .pad-me {
+            padding: 0 25px;
+          }
+      </style>
+      
+      <!--<link href="assets/css/bootstrap.css" rel="stylesheet">-->
+
+      <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+        <script src="../assets/js/html5shiv.js"></script>
+      <![endif]-->
+
+      <!-- Fav and touch icons -->
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                      <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                     <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    </head>
+
+    <body>
+
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#"><strong>UCLA</strong> Scholarship Resource Center</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+                  <!--
+                    jQuery-menu-aim: this <ul> defines the dropdown main menu and its contents.
+                    This is just one of many possible examples for defining the menu's HTML.
+                    jQuery-menu-aim is agnostic to your HTML structure, it only fires events to
+                    be used as you please.
+                  -->
+                  <ul class="dropdown-menu" role="menu">
+                      <li class="nav-header">Nav header</li>
+                      <li data-submenu-id="submenu-1"><a href="#">Who We Are</a></li>
+                      <li data-submenu-id="submenu-2"><a href="../services/">SRC Services</a></li>
+                      <li data-submenu-id="submenu-3"><a href="#">UCLA Scholarships</a></li>
+                      <li data-submenu-id="submenu-4"><a href="#">National and Int'l Merit Scholarships</a></li>
+                      <li data-submenu-id="submenu-5"><a href="#">Calendar</a></li>
+                      <li data-submenu-id="submenu-6"><a href="#">Online Scholarship Search Services</a></li>
+                      <li data-submenu-id="submenu-7"><a href="#">In The News</a></li>
+                      <li data-submenu-id="submenu-8"><a href="#">Resources and Support</a></li>
+                  </ul>
+                  <!--<ul class="dropdown-menu">
+                    <li class="nav-header">Nav header</li>
+                    <ul class="inline">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                    </ul>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>-->
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container top-logo">
+        <ul class="breadcrumb">
+          <li><a href="../home/index.html">Home</a> <span class="divider">/</span></li>
+          <li class="active">UCLA Scholarships</li>
+        </ul>
+      </div>
+      <!-- pic -->
+      <div class="container">
+        <img src="../assets/img/pic5.png">
+      </div>
+      <!-- mid -->
+      <div class="container main-feature-bg">
+        <div class="container main-feature">
+          <div id="financial"></div>
+          <div class="pad-me">
+            <div class="row-fluid">
+              <div class="span12">
+                <h2>UCLA Scholarships</h2>
+                <hr/>
+              </div>
+            </div>
+            <!-- Example row of columns -->
+          <div class="row-fluid">
+            <div class="span4">
+              <h3>Quick Links</h3>
+              <ul class="unstyled">
+                <li><a href="#education">UCLA Division of Undergraduate Education </a></li>
+                <li><a href="#lettersScience">UCLA College of Letters and Sciences</a></li>
+                <li><a href="#studentAffairs">UCLA Division of Student Affairs</a></li>
+                <li><a href="#centers">UCLA Centers and Associations</a></li>
+                <li><a href="#schools">UCLA Schools </a></li>
+                <li><a href="#students">UCLA Student Organizations</a></li>
+              </ul>
+            </div>
+            <div class="span8">
+              <div class="row-fluid">
+                <div id="education"></div>
+                <h3>UCLA Division of Undergraduate Education </h3>
+                <p>Scholarship Resource Center</p>
+                <ul>
+                  <li>Donor Scholarship (click here to access application for upcoming AY)</li>
+                </ul>
+                <p><a href="http://www.ugeducation.ucla.edu/honors/">Honors Programs</a></p>
+                <p><a href="http://www.ugeducation.ucla.edu/aap/">Academic Advancement Program</a></p>
+                <p><a href="http://www.ugeducation.ucla.edu/urhass">Undergraduate Resource Centers for Humanities and Social Sciences</a></p>
+                <p><a href="http://www.ugresearchsci.ucla.edu/">Undergraduate Resource Centers for Life and Physical Sciences</a></p>
+                <p><a href="http://www.ugeducation.ucla.edu/uei/">Undergraduate Education Initiatives</a></p>
+                <p><a href="http://www.ugeducation.ucla.edu/aap/cccp/">Center for Community College Partnerships</a></p>
+                <p><a href="http://www.ugeducation.ucla.edu/communitylearning/">Center for Community Learning</a></p>
+
+                <div id="lettersScience"></div>
+                <hr>
+                <h3>UCLA College of Letters and Sciences</h3>
+                <p><a href="http://www.humanities.ucla.edu/home">Humanities</a></p> 
+                <p><a href="http://lifesciences.ucla.edu/">Life Science</a></p> 
+                <p><a href="http://www.physicalsciences.ucla.edu/">Physical Sciences</a></p> 
+                <p><a href="http://www.sscnet.ucla.edu/college/">Social Sciences </a></p> 
+
+                <div id="studentAffairs"></div>
+                <hr>
+                <h3>UCLA Division of Student Affairs</h3>
+                <p><a href="http://www.fao.ucla.edu">Financial Aid Office </a></p>
+                <p><a href="http://www.deanofstudents.ucla.edu/">Dean of Student Offices </a></p>
+                <p><a href="http://www.studentgroups.ucla.edu/dos/students/honors/ ">UCLA Honors Societies </a></p>
+                <p><a href="http://www.lgbt.ucla.edu/">Lesbian Gay Bisexual &Transgender Resource Center </a></p>
+                <p><a href="http://www.brc.ucla.edu/">Bruin Resource Center </a></p>
+                <p><a href="http://www.communityprograms.ucla.edu/">Community Programs Office </a></p>
+                <p><a href="http://www.osd.ucla.edu/">Office for Students with Disabilities </a></p>
+
+                <div id="centers"></div>
+                <hr>
+                <h3>UCLA Centers and Associations</h3>
+                <p><a href="http://alumni.ucla.edu/">UCLA Alumni Association </a></p>
+                <p><a href="http://www.csw.ucla.edu/">Center for the Study of Women </a></p>
+                <p><a href="www.international.ucla.edu">UCLA International Institute </a></p>
+                <p><a href="http://www.chicano.ucla.edu/">UCLA Chicano Studies Research Center </a></p>
+                <p><a href="http://www.aasc.ucla.edu/">UCLA Asian American Studies Center  </a></p>
+                <p><a href="http://www.bunchecenter.ucla.edu/">UCLA Bunch Center for African American Studies </a></p>
+                <p><a href="http://www.aisc.ucla.edu/">UCLA American Indian Studies Center </a></p>
+                <p><a href="http://www.research.ucla.edu/labs/index.htm ">For a complete listing of UCLA Centers and Research Institutes please click here: </a></p>
+                
+                <div id="schools"></div>
+                <hr>
+                <h3>UCLA Schools </h3>
+                <p><a href="www.gdnet.ucla.edu/grpinst.htm">UCLA Graduate Division: Graduate and Postdoctoral Extramural Support Database </a></p>
+                <p><a href="www.anderson.ucla.edu">UCLA Anderson School of Management </a></p>
+                <p><a href="www.dgsom.healthsciences.ucla.edu">David Geffen School of Medicine </a></p>
+                <p><a href="www.law.ucla.edu/">UCLA School of Law </a></p>
+                <p><a href="www.dentistry.ucla.edu/">UCLA School of Dentistry </a></p>
+                <p><a href="www.publicaffairs.ucla.edu">UCLA Luskin School of Public Policy </a></p>
+                <p><a href="www.tft.ucla.edu/">UCLA School of Theater, Film, and Television </a></p>
+                <p><a href="www.arts.ucla.edu/">UCLA School of the Arts and Architecture </a></p>
+                <p><a href="gseis.ucla.edu/">UCLA Graduate School of Education and Information Studies  </a></p>
+                <p><a href="nursing.ucla.edu">UCLA School of Nursing </a></p>
+                <p><a href="www.engineer.ucla.edu/‎">Henry Samueli School of Engineering </a></p>
+                
+                <div id="students"></div>
+                <hr>
+                <h3>UCLA Student Organizations</h3>
+                <p><a href="students.asucla.ucla.edu">UCLA Undergraduate Student Association</a></p> 
+                <p><a href="www.ideasla.org">Improving Diversity, Equality, Access and Success (IDEAS) </a></p> 
+                <p><a href="http://www.studentgroups.ucla.edu/home/">For a complete listing of Undergraduate Student Groups, see</a></p> 
+
+                <hr>
+              </div>
+            </div>
+         </div>
+        </div>
+
+  <div class="container footer-feature">
+          <!-- FOOTER -->
+          <footer>
+            <div class="pad-me">
+            <div class="row-fluid bump">
+              <div class="span4">
+                <h4>More Links</h4>
+                <ul class="nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="../services">SRC Services</a></li>
+                  <li><a href="#">UCLA Scholarships</a></li>
+                  <li><a href="#">Calendar</a></li>
+                  <li><a href="#">National and Int'l Merit Scholarships</a></li>
+                  <li><a href="#">Search Services</a></li>
+                  <li><a href="#">Resources and Support</a></li>
+                </ul>
+             </div>
+             <div class="span4">
+                <h4>Contact Us</h4>
+                <address>
+                  <strong>Scholarship Resource Center</strong><br>
+                  233 Covel Commons<br />
+                  Los Angeles, CA 90095-7247<br />
+                  <abbr title="Phone">P:</abbr> (310) 206-2875
+                </address>
+             </div>
+             <div class="span4">
+                <h4>Connect with Us</h4>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">Google Plus</a></p>
+             </div>
+            </div>
+            <p class="pull-right"><a href="#"><i class="icon-arrow-up"></i>Back to top</a></p>
+            <p><span class="muted">&copy; 2013 Scholarship Resource Center. All rights reserved.</span></p>
+            </div>
+          </footer>
+        </div> <!-- /container -->
+
+        </div>
+
+      </div>
+      <!--
+        jQuery-menu-aim: the following defines each submenu's content. There are a million
+        and one ways to do this, places to structure the HTML, etc. This is just one example.
+        jQuery-menu-aim is agnostic to your HTML structure, it only fires events to be used
+        as you please.
+      -->
+      <div id="submenu-1" class="popover">
+          <h3 class="popover-title">Who We Are</h3>
+          <div class="popover-content">
+            Mission Statement<br />
+            History, Brief Statment
+          </div>
+      </div>
+      <div id="submenu-2" class="popover">
+          <h3 class="popover-title">SRC Services</h3>
+          <div class="popover-content">
+            Services<br />
+            Resources to find<br />
+            Resources to help apply<br />
+            Contact us<br />
+            Map(s)
+          </div>
+      </div>
+      <div id="submenu-3" class="popover">
+          <h3 class="popover-title">UCLA Scholarships</h3>
+          <div class="popover-content">
+            Under graduate SCHOOLS and COLLEGES<br />
+            Graduate SCHOOLS and COLLEGES<br />
+            UCLA Centers<br />
+            UCLA Departments<br />
+            UCLA Student Organizations<br />
+          </div>
+      </div>
+      <div id="submenu-4" class="popover">
+          <h3 class="popover-title">National and Int'l Merit Scholarships</h3>
+          <div class="popover-content">?</div>
+      </div>
+      <div id="submenu-5" class="popover">
+          <h3 class="popover-title">Calendar</h3>
+          <div class="popover-content">
+            Scholarship 1<br />
+            Scholarship 2<br />
+            Scholarship 3
+          </div>
+      </div>
+      <div id="submenu-6" class="popover">
+          <h3 class="popover-title">Online Scholarship Search Services</h3>
+          <div class="popover-content">
+          See our current link
+          </div>
+      </div>
+      <div id="submenu-7" class="popover">
+          <h3 class="popover-title">In The News</h3>
+          <div class="popover-content"><img src="img/gabon.png"></div>
+      </div>
+      <div id="submenu-8" class="popover">
+          <h3 class="popover-title">Resources and Support</h3>
+          <div class="popover-content">In this section, you'll find tips and information</div>
+      </div>
+      <div id="submenu-red-leaf" class="popover">
+          <h3 class="popover-title">Red Leaf</h3>
+          <div class="popover-content"><img src="img/red-leaf.png"></div>
+      </div>
+      <div id="submenu-king-colobus" class="popover">
+          <h3 class="popover-title">King Colobus</h3>
+          <div class="popover-content"><img src="img/colobus.png"></div>
+      </div>
+
+      <!-- Le javascript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+      <script src="../assets/js/bootstrap.js"></script>
+      <script src="../assets/js/jquery.menu-aim.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('a[href^="#"]').on('click',function (e) {
+              e.preventDefault();
+
+              var target = this.hash,
+              $target = $(target);
+
+              $('html, body').stop().animate({
+                  'scrollTop': $target.offset().top
+              }, 900, 'swing', function () {
+                  window.location.hash = target;
+              });
+          });
+        });
+      </script>
+    </body>
+  </html>
