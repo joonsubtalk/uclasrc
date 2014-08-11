@@ -1,0 +1,709 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Scholarship Resource Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="English" name="language" />
+    <meta name="keywords" content="Scholarship, SRC, UC, UCLA, University of California Los Angeles, paying for college" />
+    <meta name="description" content="The UCLA Scholarship Resource Center provides scholarship information, resources, and support services to all UCLA students, regardless of financial aid eligibility."/>
+    <meta name="author" content="Joon-Sub Chung">
+
+      <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+      <!-- Le styles -->
+      <link href="../assets/css/bootstrap.css" rel="stylesheet">
+      <link href="../assets/css/bootmin.css" rel="stylesheet">
+      <style type="text/css">
+
+
+        body {
+          background-image:url('../assets/img/sub-background.png');
+          background-repeat: repeat-x;
+          background-color: #dfeef9;
+          padding-top: 0px;
+          padding-bottom: 40px;
+          color: #555;
+          font: "ProximaNova", Verdana, sans-serif;
+          font-size: 15px;
+        }
+        h3,h4{
+          font-weight: 300;
+        }
+
+        .floss{
+        color: #57A1C7;
+        }
+        /*
+        h3 a:visited {
+        color: #49afcd;
+        }*/
+        h3 a:hover {
+        color: #276a99;
+        }
+        h2, h3{
+          font-family: 'Archivo Narrow', sans-serif;
+        }
+
+        .top-logo h2 {
+          padding-top: 10px;
+          padding-bottom: 10px;
+            color: #fff;
+          margin-top: -5px; 
+        }
+        .top-logo {
+          margin-top: none;
+          margin-top: 45px; 
+        }
+        .main {
+          background-color: #fff;
+          /*padding: 20px;*/
+          -webkit-border-bottom-right-radius: 20px;
+          -webkit-border-bottom-left-radius: 20px;
+          -moz-border-radius-bottomright: 20px;
+          -moz-border-radius-bottomleft: 20px;
+          border-bottom-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+        }
+        .carousel {
+          margin-bottom: 0px;
+        }
+         .popover {
+              width: 400px;
+              -webkit-border-top-left-radius: 0px;
+              -webkit-border-bottom-left-radius: 0px;
+              border-top-left-radius: 0px;
+              border-bottom-left-radius: 0px;
+              overflow: hidden;
+          }
+          /*
+          .popover-content {
+              text-align: center;
+          }*/
+          .popover-content img {
+              height: 212px;
+              max-width: 250px;
+          }
+
+          .dropdown-menu > li > a:hover {
+              background-image: none;
+              color: white;
+              background-color: rgb(0, 129, 194);
+              background-color: rgba(0, 129, 194, 0.5);
+          }
+
+          .dropdown-menu > li > a.maintainHover {
+              color: white;
+              background-color: #0081C2;
+          }
+          /* Portrait tablet to landscape and desktop */
+          @media (min-width: 0px) and (max-width: 979px) { 
+            .logo {margin-top: 0px;}
+            .top-logo {margin-top: 0px;}
+
+
+            .main-feature-bg {
+              padding-left: 0;
+            }
+            .main-feature {
+              position:relative;
+              margin-top: 0;
+              background: #fff;
+            }
+          }
+          @media (min-width: 981px) and (max-width: 1199px) { 
+            .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+            width: 900px;
+            }
+          }
+          @media (min-width: 980px){
+            /*
+            .span4 {
+              width: 280px;
+            }
+            .span8 {
+              width: 580px;
+            }
+
+          .span6 {
+            width: 400px;
+            }
+            */
+            
+          .main-feature-bg {
+            padding-left: 80px;
+          }
+            .main-feature {
+              position:absolute;
+              margin-top: -40px;
+              width: 860px;
+              background: #fff;
+            }
+            .footer-feature {
+              position:absolute;
+              width: 860px;
+              background: #fff;
+            }
+          }
+          @media (min-width: 1200px){
+          .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+            width: 900px;
+            }
+
+          .main-feature {
+            position:absolute;
+            margin-top: -40px;
+            width: 860px;
+            background: #fff;
+            border:1px solid #C6DAE9;
+          }
+          
+            .footer-feature {
+              position:absolute;
+              width: 860px;
+              background: #fff;
+            }
+
+
+          .main-feature-bg {
+            padding-left: 80px;
+          }
+          }
+          /* mac */
+          .navbar .nav {
+            font-size: 12px;
+          }
+          .navbar-inverse .brand {
+            font-size: 14px;
+            color: #005179;
+          }
+          .navbar-inverse .brand, .navbar-inverse .nav>li>a {
+            color: #005179;
+          }
+          .navbar-inverse .nav .active>a, .navbar-inverse .nav .active>a:hover, .navbar-inverse .nav .active>a:focus {
+            color: #ffffff;
+            background-color: #1a4b95;
+          }
+
+          .btn-gold {
+            background-color: hsl(51, 100%, 51%) !important;
+            background-repeat: repeat-x;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe760", endColorstr="#ffd905");
+            background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe760), to(#ffd905));
+            background-image: -moz-linear-gradient(top, #ffe760, #ffd905);
+            background-image: -ms-linear-gradient(top, #ffe760, #ffd905);
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffe760), color-stop(100%, #ffd905));
+            background-image: -webkit-linear-gradient(top, #ffe760, #ffd905);
+            background-image: -o-linear-gradient(top, #ffe760, #ffd905);
+            background-image: linear-gradient(#ffe760, #ffd905);
+            border-color: #ffd905 #ffd905 hsl(51, 100%, 46.5%);
+            color: #333 !important;
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.29);
+            -webkit-font-smoothing: antialiased;
+          }
+          .bump {
+            margin-bottom: 10px;
+          }
+          footer{
+            background-image:url('../assets/img/bgfooter.jpg');
+            background-repeat: repeat-x;
+            background-color: #fff;
+          }
+          .red {
+            background-color: #a03939;
+            margin: 10px;
+            color: #fff;
+            padding: 10px 20px;
+          }
+          .green {
+            background-color: #59a039;
+            margin: 10px;
+            padding: 10px 20px;
+            color: #fff;
+          }
+          .pad-me {
+            padding: 0 25px;
+          }
+      </style>
+      
+      <!--<link href="assets/css/bootstrap.css" rel="stylesheet">-->
+
+      <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+        <script src="../assets/js/html5shiv.js"></script>
+      <![endif]-->
+
+      <!-- Fav and touch icons -->
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                      <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                     <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    </head>
+
+    <body id="top">
+
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="../home/index.html"><strong>UCLA</strong> Scholarship Resource Center</a>
+            <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="../home/index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+                <!--
+                  jQuery-menu-aim: this <ul> defines the dropdown main menu and its contents.
+                  This is just one of many possible examples for defining the menu's HTML.
+                  jQuery-menu-aim is agnostic to your HTML structure, it only fires events to
+                  be used as you please.
+                -->
+                <!--
+                <ul class="dropdown-menu" role="menu">
+                    <li class="nav-header">Nav header</li>
+                    <li data-submenu-id="submenu-1"><a href="#">Who We Are</a></li>
+                    <li data-submenu-id="submenu-2"><a href="../services">SRC Services</a></li>
+                    <li data-submenu-id="submenu-3"><a href="#">UCLA Scholarships</a></li>
+                    <li data-submenu-id="submenu-4"><a href="#">National and Int'l Merit Scholarships</a></li>
+                    <li data-submenu-id="submenu-5"><a href="#">Calendar</a></li>
+                    <li data-submenu-id="submenu-6"><a href="#">Online Scholarship Search Services</a></li>
+                    <li data-submenu-id="submenu-7"><a href="#">In The News</a></li>
+                    <li data-submenu-id="submenu-8"><a href="#">Resources and Support</a></li>
+                </ul>
+                -->
+                <ul class="dropdown-menu">
+                  <li class="nav-header">Quick Links</li>
+                  <li><a href="../home/index.html">Home</a></li>
+                  <li><a href="../services/index.html">SRC Services</a></li>
+                  <li><a href="../scholarship/index.html">UCLA Scholarships</a></li>
+                  <li><a href="../calendar/index.html">Calendar</a></li>
+                  <li><a href="../merit/index.html">National and Int'l Merit Scholarships</a></li>
+                  <li class="active"><a href="#">Search Services</a></li>
+                  <li><a href="../resources/index.html">Resources and Support</a></li>
+                  <!--
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                  -->
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container top-logo">
+        <ul class="breadcrumb">
+          <li><a href="../home/index.html">Home</a> <span class="divider">/</span></li>
+          <li class="active">Search Services</li>
+        </ul>
+      </div>
+      <!-- pic -->
+      <div class="container">
+        <img src="../assets/img/pic6.png">
+      </div>
+      <!-- mid -->
+      <div class="container main-feature-bg">
+        <div class="container main-feature">
+          <div id="financial"></div>
+          <div class="pad-me">
+            <div class="row-fluid">
+              <div class="span12">
+                <h2>Search Services</h2>
+                <p>
+                  This list is always changing, so check back frequently and please report any defunct links.
+                </p>
+              </div>
+            </div>
+            <!-- Example row of columns -->
+          <div class="row-fluid">
+            <div class="span12">
+              <ul class="nav nav-tabs" id="myTab">
+                <li class="active"><a href="#ug">Undergraduate</a></li>
+                <li><a href="#ucg">UCLA and UC Grads</a></li>
+                <li><a href="#og">Other Graduates</a></li>
+                <li><a href="#is">International Student</a></li>
+              </ul>
+               
+              <div class="tab-content">
+                <div class="tab-pane active" id="ug">
+                  <h3>Undergraduate Searches</h3>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Resource</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="http://www.ab540.ucla.edu/campusresource_financial.html">AB540 and Undocumented Students</a></td>
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span></td>
+                        <td>Information and funding opportunities for AB540 and undocumented students.</td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://www.acs.org/content/acs/en/funding-and-awards/scholarships.html">ACS</a></td>
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span></td>
+                        <td>Scholarship, grant, fellowship, and internship information specifically for members of underrepresented groups who pursue professions in chemistry-related sciences.</td>
+                      </tr>
+                      <tr>
+                        <td><a href="http://www.aie.org/scholarships/">AIE</a></td>
+                        <td><span class="label label-info">UG</span><span class="label label-success">IS</span></td>
+                        <td>The Adventures in Education website links to scholarship information as well as career planning advice.</td>
+                      </tr>
+                      <tr>
+                        <td><a href="http://aidscholar.com/">aidscholar.com</a></td>
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>Aidscholar.com provides a simple, easy to use interface without having to create an account or profile.</td>
+                      </tr>
+                      <tr>
+                        <td><a href="http://www.asainc.org/national/scholarships.shtml">Armenian Students Association</a></td>
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span></td>
+                        <td>Resources for undergraduate and graduate scholarships for students of Armenian descent.</td>
+                      </tr>
+                      <tr>
+                        <td><a href="http://www.thesalliemaefund.org/financial-aid/scholarships/search/default.aspx">Black College Dollars</a></td>
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span></td>
+                        <td>Sallie Mae's free scholarship search, focused on African-American students.</td>
+                      </tr>
+                      <tr>
+                        <td><a href="http://www.blackexcel.org/100minority.htm">BlackExcel.org's 100 Minority Scholarships</a></td>
+                        <td><span class="label label-info">UG</span></td>
+                        <td>Scholarship, grant, fellowship, and internship information specifically for members of underrepresented groups who pursue professions in chemistry-related sciences.</td>
+                      </tr>
+                      <tr>
+                        <td><a href="http://www.collegeanswer.com/paying/scholarship_search/pay_scholarship_search.jsp">College Answer Scholarship Search</a></td>
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span></td>
+                        <td>A scholarship search service from Sallie Mae. College Answer scholarship search service allows students to search the free database for funding information from a variety of resources, including scholarships, fellowships, grants, work study, loan programs, tuition waivers, internships, competitions, and work co-operative programs.</td>
+                      </tr>
+                      <tr>
+                        <td><a href="http://apps.collegeboard.com/cbsearch_ss/welcome.jsp">College Board Online</a></td>
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>A database of approximately 3,300 sponsors. The College Board Online Database does not retain personal information; you must reenter your personal data each time you search for scholarships.</td>
+                      </tr>
+                      <tr> 
+                        <td><a href="http://college-insight.org/">collegeinsight.org</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>This website allows you to compare financial and demographic data for colleges across the country (cost of attendance, average student debt load, how many students apply for financial aid, diversity, etc.). You can print out anything you want in either table or graph form.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://collegetoolkit.com/">Collegetoolkit.com</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>Collegetoolkit.com is a one-stop scholarship and college resource for students, which has been featured on CNN.com, the Christian Science Monitor, and Attache Magazine! Collegetoolkit.com's One-Stop College & Scholarship Resource allows students to find and apply for scholarships, search through a database of more than 4,000 colleges, and explore 900 careers all in one location. It is one of the most comprehensive sites for life after high school... and everything on the site is free for students to use!</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://www.diversityabroad.com/international-scholarships">diversityabroad.com</a></td>
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span></td>
+                        <td>This website focuses on helping students find financial resources to travel and study abroad. Users can search according to various criteria entered by keyword.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://www.educationcorner.com/financial-aid-scholarships.html">Education Corner</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>A very comprehensive site to find thousands of scholarships. Organized by category as well as alphabetically.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://www.fastaid.com/">FastAID</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>Dan Cassidy's FastAID, another comprehensive scholarship resource, advertises the site as the "World's largest and oldest private sector scholarship database. 20 years of Scholarship Research, Constantly updated."</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://www.fastweb.com/">fastWEB</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>A free, searchable database that contains more than 600,000 private sector scholarships, fellowships, grants, and loans totalling over 1 billion dollars. Plan to spend 30 minutes creating your profile the first time that you use fastWEB.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://www.finaid.org/">Finaid</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>FinAid provides an excellent site with great funding resources, tips, and general college information.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://findtuition.com">findtuition.com</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>A free scholarship search site. </div><td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://college-scholarships.findthebest.com/">Find the best College Scholarships</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>Scholarship Finder that helps search for available scholarships by required GPA, enrollment level, area of study, background and more.<td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://www.gocollege.com/scholarship_search/scholarship.html">Go College Scholarship Search</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>This search service lists more than 8,000 funding sources comprised of more than 600,000 individual awards, and selects those matching the student's profile. You must choose a user ID and password to use this service. The main Go College web page provides college-related resources and information.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://helleniccomserve.com/scholarships.html">Hellenic Communication Services</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>Scholarships for undergraduate and graduate students who are U.S. citizens of Greek descent, for Greek and Cypriot citizens studying in the United States, and for Canadian citizens of Greek descent.</td> 
+                      </tr>
+                      <tr> 
+                        <td><a href="http://www.hrc.org/issues/youth_and_campus_activism/8644.htm">Human Rights Campaign</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>The HRC website offers a large list of undergraduate and graduate student scholarships for LGBT students and students who are LGBT allies.</td> 
+                      </tr>
+                      <tr> 
+                        <td><a href="http://www.iie.org/">IIE Study Abroad Database</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span></td>
+                        <td>A comprehensive database of study abroad scholarships, fellowships, and grants searchable by country or subject</td> 
+                      </tr>   
+                      <tr> 
+                        <td><a href="http://ieo.ucla.edu/scholarships">International Education Office at UCLA</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span></td>
+                        <td>The UCLA International Education Office is another place at UCLA where you can get help in your study abroad scholarship hunt.  This page lists other scholarship search databases with a focus on international education.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://www.latinocollegedollars.org/">Latino College Dollars</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span></td>
+                        <td>Latino College Dollars is a free online scholarship directory for Latinos sponsored by the Tomas Rivera Policy Institute (TRPI). Students may download a printable directory of scholarship listings or search the online database according to personal criteria. This site also offers general guidelines and tips to aid students in the scholarship process.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://www.military.com/Careers/Education/ScholarshipSearch">Military.com</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span></td>
+                        <td>Military.com specializes in funding for the armed services.</td> 
+                      </tr>
+                      <tr> 
+                        <td><a href="http://www.moaa.org/scholarshipfund/">Military Officers' Association of America Scholarship Database</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span></td>
+                        <td>Scholarships, grants, and loans available to the military community.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://nepalscholarships.com/">Nepal Scholarships</a></td>
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>National and international scholarships for Nepalese students, international awards for Nepali students, and development jobs and internships in Nepal.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://scholarship-positions.com/">Scholarship-positions.com</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span></td>
+                        <td>This site focuses on international scholarships, so its helpful in looking for funding to study abroad. It also has a lot of US scholarships.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://www.scholarshipexperts.com/">ScholarshipExperts</a></td>
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>Scholarship Experts helps students and parents to quickly and accurately identify sources of college scholarships. They help both US and international students find scholarships to attend college in the USA.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://www.ScholarshipHunter.com/">ScholarshipHunter.com</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>ScholarshipHunter.com provides a browseable list of scholarships classified by criteria such as academic major or state. The lists include captions about each scholarship and links to a detailed page of information on the scholarship including how to apply. The site does not appear to require any registration.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://www.scholarships.com/">Scholarships.com</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>Enter your personalized profile to match your specific skills, talents, interests, and abilities to Scholarships.com's database of over 600,000 college scholarship awards. Your results will be delivered to you immediately on-line. Scholarships.com also offers information on loans and grants.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://schoolsoup.com/">SchoolSoup</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>A large scholarship database and search engine containing $32 Billion worth of scholarships.</td> 
+                      </tr> 
+                      <tr>
+                        <td><a href="http://www.studyabroad.com/scholarships.aspx">Study Abroad Funding</a></td>
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span></td>
+                        <td>Search for study abroad funding sources by country, subject of study, or applicant demographic.</td>
+                      </tr>
+                      <tr> 
+                        <td><a href="http://schoolsoup.com/">UNCF</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>A large listing of scholarships available for African-American graduate and undergraduate students who attend or attended UNCF member institutions.</td> 
+                      </tr> 
+                      <!--  -->
+
+                      <!-- sample 
+                      <tr>
+                        <td><a href="http://www.ab540.ucla.edu/campusresource_financial.html">AB540 and Undocumented Students</a></td>
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>Information and funding opportunities for AB540 and undocumented students.</td>
+                      </tr>
+                      sample -->
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane" id="ucg">
+                  <h3>UCLA and UC Graduate Funding Opportunities</h3>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Resource</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr> 
+                        <td><a href="http://www.gdnet.ucla.edu/grpinst.htm">GRAPES</a></td> 
+                        <td><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>UCLA's Graduate and Postdoctoral Extramural Support database lists scholarship, fellowship, and grant opportunities for graduate students.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://www.research.ucla.edu/ocga/sr2/fundopp.htm">UCLA Office of Contract and Grant Administration</a></td> 
+                        <td><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>OCGA provides direct funding links to SPIN, IRIS, Community of Science, FEDIX, NSF, NIH databases, and federal agencies and private foundations. OCGA also provides UCLA-specific and UC-specific funding opportunities and a funding newsletter among other helpful resources.</td> 
+                      </tr> 
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane" id="og">
+                  <h3>Other Graduate Funding Opportunities</h3>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Resource</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                      <tr> 
+                        <td><a href="https://www.cfda.gov/">Catalog of Federal Domestic Assistance</a></td> 
+                        <td><span class="label label-warning">UCG</span><span class="label label-important">OG</span></td>
+                        <td>The Catalog of Federal Domestic Assistance is a government-wide compendium of all 1,479 federal programs, projects, services, and activities that provide assistance or benefits to the American public. These programs provide grants, loans, loan guarantees, services, information, scholarships, training, insurance, and many other resources.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://fundingopps.cos.com/">Community of Science</a></td> 
+                        <td><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>COS states that its site comprises "the most comprehensive source of funding information available on the Web, with more than 22,000 records, representing over 400,000 funding opportunities, worth over $33 billion." Listings include R&D opportunities from fields outside the physical and life sciences.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://www.researchresearch.com/">Fedix</a></td> 
+                        <td><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>Fedix, a Science Wise resource, provides funding alerts and information about federal, corporate, and European grants for individuals who pursue the sciences and engineering, as well as a wealth of research resources. Individuals can sign up for the Science Wise alert, a free e-mail service that delivers valuable research and education funding opportunities. The Science Wise Archive Research Funding Search lists links to specific U.S. government funding sites.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://sciencecareers.sciencemag.org/funding">Grant Net</a></td> 
+                        <td><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>Grant Net provides program search and a funding directory with contact information.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://scholarships.fatomei.com/">Nationally Coveted College Scholarships, Graduate Fellowships & Postdoctoral Awards</a></td> 
+                        <td><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>Excellently organized graduate listings you can browse. Contains information for nationally coveted awards, Science and Engineering, Human Health, Women, Minorities, Hodgepodge, and Multiple Sources. This resource links to the University of New Mexico, and lists several graduate scholarships, grants, and fellowships. Users can either browse listings or access the database.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://grants2.nih.gov/grants/oer.htm">NIH</a></td> 
+                        <td><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>A direct funding link as well as general NSF information.</td> 
+                      </tr>
+                      <tr> 
+                        <td><a href="http://www.nsf.gov/index.jsp">NSF</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>A direct funding link as well as general NSF information.</td> 
+                      </tr>
+                      <tr> 
+                        <td><a href="http://scholarshipdb.net/">Scholarshipdb</a></td> 
+                        <td><span class="label label-info">UG</span><span class="label label-warning">UCG</span><span class="label label-important">OG</span><span class="label label-success">IS</span></td>
+                        <td>Scholarshipdb.net provides free information of hundreds of universities around the world. By a few search clicks, you can find information such as: scholarship, university ranking, courses, and other data. Your quest for the dream university is just a few clicks away.</td> 
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane" id="is">
+                  <h3>International Students</h3>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Resource</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr> 
+                        <td><a href="http://www.nriol.com/oisnet/index.asp">Overseas Indian Student Network</a></td> 
+                        <td><span class="label label-success">IS</span></td>
+                        <td>The Overseas Indian Student Network offers scholarship resources for Indian citizens studying abroad.</td> 
+                      </tr> 
+                      <tr> 
+                        <td><a href="http://iefa.org/">International Education Financial Aid</a></td> 
+                        <td><span class="label label-success">IS</span></td>
+                        <td>The IEFA Website lets you search for undergraduate and graduate scholarships that do not require U.S. citizenship. It also offers up-to-date information for international students studying in the United States.</td> 
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+               
+            </div>
+          </div>
+         </div>
+
+  <div class="container footer-feature">
+          <!-- FOOTER -->
+          <footer>
+            <div class="pad-me">
+            <div class="row-fluid bump">
+              <div class="span4">
+                <h3>More Links</h3>
+                <ul class="nav">
+                  <li><a href="../home/index.html">Home</a></li>
+                  <li><a href="../services/index.html">SRC Services</a></li>
+                  <li><a href="../scholarship/index.html">UCLA Scholarships</a></li>
+                  <li><a href="../calendar/index.html">Calendar</a></li>
+                  <li><a href="../merit/index.html">National and Int'l Merit Scholarships</a></li>
+                  <li><a href="#">Search Services</a></li>
+                  <li class="active"><a href="../resources/index.html">Resources and Support</a></li>
+                </ul>
+             </div>
+             <div class="span4">
+                <h3>Contact Us</h3>
+                <address>
+                  <strong>Scholarship Resource Center</strong><br>
+                  233 Covel Commons<br />
+                  Los Angeles, CA 90095-7247<br />
+                  <abbr title="Phone">P:</abbr> (310) 206-2875
+                </address>
+             </div>
+             <div class="span4">
+                <h3>Connect with Us</h3>
+                <p><a href="https://www.facebook.com/uclasrc">Facebook</a></p>
+                <p><a href="https://twitter.com/UCLASRC">Twitter</a></p>
+             </div>
+            </div>
+            <p class="pull-right"><a href="#top"><i class="icon-arrow-up"></i>Back to top</a></p>
+            <p><span class="muted">&copy; 2014 Scholarship Resource Center. All rights reserved.</span></p>
+            </div>
+          </footer>
+        </div> <!-- /container -->
+
+        </div>
+
+      </div>
+
+      <!-- Le javascript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+      <script src="../assets/js/bootstrap.js"></script>
+      <script src="../assets/js/jquery.menu-aim.js"></script>
+    
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32707787-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
+
+      <script>
+        $('#myTab a').click(function (e) {
+          e.preventDefault();
+          $(this).tab('show');
+        })
+      </script>
+    </body>
+  </html>
